@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const container = document.querySelector(".container");
+const container = document.querySelector(".container");
 
-    for (let i = 0; i < 16 * 16; i++) {
-        const cell = document.createElement("div");
-        cell.classList.add("cells");
-        
+const size = prompt("Enter size number (Max: 100)")
 
-        cell.addEventListener("mouseover", () => {
-            cell.style.backgroundColor = "blue"
-        })
+for (let i = 0; i < 16 * 16; i++) {
+    const cell = document.createElement("div");
+    cell.classList.add("cells");
+    
 
-        container.appendChild(cell);
-    }
-});
+    cell.addEventListener("mouseover", () => {
+        cell.style.backgroundColor = "blue"
+    })
+
+    container.appendChild(cell);
+}

@@ -9,11 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .board {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 960pxpx;
+    max-height: 960px;
     display: flex;
     flex-wrap: wrap;
 }

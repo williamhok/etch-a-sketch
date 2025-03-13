@@ -6,3 +6,10 @@ for (i = 0; i < 16; i++) {
     divs.className = "square"
     board.appendChild(divs)
 }
+
+const squares = document.querySelectorAll(".square")
+squares.forEach(square => {
+    square.addEventListener("mouseover", () => {
+        square.setAttribute("style", "background-color: blue")
+    })
+})

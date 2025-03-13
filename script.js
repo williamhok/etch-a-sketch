@@ -25,5 +25,8 @@ const changeSize = document.querySelector(".change-size")
 
 changeSize.addEventListener("click", () => {
     size = prompt("Enter size number (max: 100)")
-    createBoard(size)
+    if (size <= 100) {
+        createBoard(size)
+    } else
+        alert("Error")
 })
